@@ -17,9 +17,9 @@ const NavBar = () => {
                     <NavbarBootstrap.Toggle aria-controls="basic-navbar-nav" />
                     <NavbarBootstrap.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Nosotros</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <Nav.Link href="#link">Accesorios</Nav.Link>
+                            <Nav.Link className='navtextc' href="#home">Nosotros</Nav.Link>
+                            <Nav.Link className='navtextc' href="#link">Link</Nav.Link>
+                            <Nav.Link className='navtextc' href="#link">Accesorios</Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">

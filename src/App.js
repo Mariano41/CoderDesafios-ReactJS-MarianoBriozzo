@@ -1,63 +1,32 @@
 import Button from 'react-bootstrap/Button';
 import Logo from './img/logo.png';
+import ItemCount from './components/ItemCount';
+import ItemListContainer from "./components/ItemListContainer"
 
 import Productos from "./components/Productos";
 
 import "./app/style.css"
 
-import { LightBox, GlobalStyle } from "./app/styles";
-
 import NavBar from './components/NavBar';
 
 
-// import NavBar from "./components/navbar"
-
-const listado = [
-    {
-        name: "Guitarra Electica",
-        precio: 30000
-    },
-    {
-        name: "Guitarra Criolla",
-        precio: 15000
-    },
-    {
-        name: "Guitarra Electro Acústica",
-        precio: 25000
-    },
-    {
-        name: "Cuerdas",
-        precio: 3000
-    },
-    {
-        name: "Afinador",
-        precio: 1000
-    },
-    {
-        name: "Fundas",
-        precio: 2500
-    },
-    {
-        name: "Puas",
-        precio: 700
-    },
-]
+const mensaje = "Welcome to GuitarHouse"
 
 const App = () => {
+    let stock = 8
+
     return (
-        <div className="box">
+        <div >
 
             <NavBar />
-            <LightBox LightBox visible={true} >
-                <div >
 
-                    <h1>Lista de Productos</h1>
-                    <Productos datos={listado} />
-
-                </div>
-            </LightBox>
+            <ItemListContainer greetings={mensaje} ></ItemListContainer>
+            <ItemCount stock={stock}></ItemCount>
         </div>
+
     );
 }
+
+
 
 export default App;

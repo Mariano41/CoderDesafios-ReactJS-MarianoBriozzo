@@ -13,5 +13,11 @@
 }
 
 .navtextc {
-    color: yellow;
+    color: yellow !important;
+}
+
+.BTN-div {
+    display: flex;
+
+    /* border-style: groove; */
 }
