@@ -1,15 +1,21 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Page2 } from "../pages/Page2";
+import Page2 from "../pages/Page2";
 import Init from "../pages/Init";
+import Layout from "./layout";
 
 
-const Router = () => (
-    <BrowserRouter>
-        <Routes>
-            <Route index element={<Init />} />
-            <Route path="/page2" element={<Page2 />} />
-        </Routes>
-    </BrowserRouter>
-)
+const Router = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
 
-export default Router
+                <Route element={<Layout />}>
+                    <Route index element={<Init />} />
+                    <Route path="/page2" element={<Page2 />} />
+                </Route>
+
+            </Routes>
+        </BrowserRouter>
+    )
+}
+export default Router;
