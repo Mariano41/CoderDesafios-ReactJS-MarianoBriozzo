@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2bc95461.css",
-    "main.js": "/static/js/main.7554083b.js",
+    "main.js": "/static/js/main.e935ca42.js",
     "static/media/guitarelect.jpg": "/static/media/guitarelect.d9991dbd29ce82920bec.jpg",
     "static/media/logo.png": "/static/media/logo.173eed32c2ee688083fa.png",
     "static/media/cart.png": "/static/media/cart.e3f9d4e126072b56b70f.png",
     "index.html": "/index.html",
     "main.2bc95461.css.map": "/static/css/main.2bc95461.css.map",
-    "main.7554083b.js.map": "/static/js/main.7554083b.js.map"
+    "main.e935ca42.js.map": "/static/js/main.e935ca42.js.map"
   },
   "entrypoints": [
     "static/css/main.2bc95461.css",
-    "static/js/main.7554083b.js"
+    "static/js/main.e935ca42.js"
   ]
 }
