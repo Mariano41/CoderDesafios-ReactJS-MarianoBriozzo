@@ -5,12 +5,24 @@ const ItemCount = ({ stock }) => {
 
     const [contador, setContador] = useState(1)
 
+    // const agregarContador = () => {
+    //     setContador(contador + 1)
+    // }
+
+    // const restarContador = () => {
+    //     setContador(contador - 1)
+    // }
+
     const agregarContador = () => {
-        setContador(contador + 1)
+
+        setContador(prev => prev + 1)
+
     }
 
     const restarContador = () => {
-        setContador(contador - 1)
+
+        setContador(prev => prev - 1)
+
     }
 
     return (
